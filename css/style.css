@@ -1,0 +1,68 @@
+/* tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Rubik:ital@1&display=swap');
+/* selector universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(143, 177, 165);
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family:'poppins';
+    font-weight: 900;
+    color:rgb(61, 70, 70);
+}
+/* selector etiqueta */
+h2{
+    background-color: rgba(127, 175, 177, 0.808);
+}
+/* selector id */
+#site_text{
+    background-color: blanchedalmond;
+}
+/* selector clases */
+.suptitles{
+    font-family: 'poppins';
+}
+/* selector por atributo */
+[disabled]{
+    background-color: rgb(122, 113, 131);
+}
+/* selector id boron enviar */
+#btn_send{
+    margin: 20px;
+    padding: 20px;
+}
+/* selector por seudo clases */
+#btn_send:hover{
+    background-color: rgb(102, 102, 150);
+    font-family: poppins;
+    color: brown;
+    font-size: 15px;
+}
+#papa{
+    margin-left: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+#hermanos{
+    background-color: rgb(5, 28, 48);
+    margin: 10px;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0px 2px;
+}
+
+#papa > #hermano > #nh_uno{
+    color: rgb(233, 0, 0);
+}
+
+#papa .nieto{
+    color: blue;
+}
+
