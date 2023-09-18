@@ -66,3 +66,44 @@ h2{
     color: blue;
 }
 
+#title_box{
+    color:#7d2ec7 ;
+    font-family: 'poppins' , sans-serif;
+    background-color: rgb(228, 96, 73);
+    text-align: center;
+    padding: 10px;
+    margin: 40px;
+    border: 5px groove #000;
+    border-radius: 20px;
+    word-spacing: 15px;
+    font-size: 40px;
+    
+    
+    
+}
+
+#box_father{
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    background-image: url();
+    background-size:cover;
+}
+
+
+@media (min-width: 800px)and(man-width: 1280px){
+body{
+    background-color: blue;
+} 
+h1{
+    text-align: center;
+}
+}
+
+@media (max-width: 799px){
+    body{
+        background-color: #7d2ec7;
+    }
+}
