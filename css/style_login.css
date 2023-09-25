@@ -1,29 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+
 :root{
-    --primary: #dd946f;
-    --primary-hover: #da5715;
-    --secondary: #c187d1;
-    --backgroud: rgb(73, 73, 158);
-    --aura: rgb(101, 177, 118);
-    --secunday-hover: rgb(53, 4, 59);
-    
-    
-    
+    --primary:#DD946F;
+    --primary-hover:#CD7D7D;
+    --secondary: #EFD0f8;
+    --secondary-hover:#B8A1D9;
+    --aura:#9265CA80;
+    --background:#261E5A;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--backgroud);
-    font-family: 'mulish';
-
+    background-color: var(--background);
+    font-family: 'Mulish';
+}
+h1{
+    color: var(--secondary);
 }
 .background{
     content: "";
     position: absolute;
     height: 100vh;
     width: 100vw;
-    display: center;
-    background-image: url(https://www.eltiempo.com/files/image_640_428/uploads/2022/09/27/63334de665ed2.jpeg);
+    display: grid;
+    place-items: center;
+    background-image: url(https://th.bing.com/th/id/R.28ba8728d4b1ed3341d5c9ab52d694a6?rik=NGOHKvjP0BxIYw&pid=ImgRaw&r=0);
     background-repeat: no-repeat;
     background-size: auto;
     opacity: 0.5;
@@ -33,21 +35,23 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
-
+    width:100vw;
 }
 .my_form{
     display: flex;
     flex-direction: column;
     position: relative;
     gap: 16px;
-    background-color: var(--backgroud);
+    background-color: var(--background);
     border: 1px solid var(--primary);
-    border-radius :16px;
-
-
+    border-radius: 16px;
+    box-shadow: 0 20px 60px var(--aura);
+    min-width: 180px;
+    max-width: 460px;
+    width: 100%;
+    padding: 32px;
 }
-.logins_welcome{
+.login_welcome{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -63,7 +67,7 @@
 }
 .my_form_button{
     background-color: var(--primary);
-    color: var(--backgroud);
+    color: var(--background);
     white-space: nowrap;
     border: none;
     display: flex;
@@ -76,18 +80,19 @@
     letter-spacing: 0.25em;
     text-decoration: none;
     cursor: pointer;
-    font-weight: 800;
-    min-height: 50px;
+    font-weight: 800px;
+    min-width: 50px;
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 5px 10px rgb(red, green, blue);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
     transition: all .3s ease;
 }
 .text_field input{
     color: var(--secondary);
     font-size: 16px;
-    font-weight: 500;
-    max-width: 100%;
+    font-weight: 500px;
+    width: 100%;
     border: 1px solid var(--secondary);
     height: 50px;
     letter-spacing: .03rem;
@@ -100,12 +105,9 @@
 }
 .my_form_button:hover{
     background-color: var(--primary-hover);
-
 }
-
 .text_field{
     position: relative;
-    
 }
 .text_field img{
     position: absolute;
@@ -113,12 +115,11 @@
     bottom: -4px;
     width: 30px;
     height: 30px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     transform-origin: center;
 }
 .text_field input:focus{
     border: 1px solid var(--primary);
-
 }
 .text_field label{
     color: var(--secondary);
@@ -127,39 +128,33 @@
     letter-spacing: .03rem;
     z-index: 10;
 }
-.inout_icon{
+.input_icon{
     position: absolute;
     bottom: 0;
     top: 55%;
     right: 8px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     transform-origin: center;
 }
-
 .my_form_actions{
     display: flex;
     flex-direction: column;
     color: var(--secondary);
-    gap:  16px;
+    gap: 16px;
     margin-top: 8px;
 }
-
 .my_form_actions a{
     color: var(--secondary);
     font-weight: 600;
 
 }
-
 .my_form_actions a:hover{
-    color: #c187d1;
+    color: #A7A2CB;
 }
-
 .my_form{
     display: flex;
     justify-content: space-between;
-
 }
-
 .my_form_signup{
     display: flex;
     justify-content: center;
