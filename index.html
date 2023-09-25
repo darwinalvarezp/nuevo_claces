@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/stile_login.css">
 </head>
 <body>
-    <ul>
-        <li><a href="html/tablas.html">ir a tablas</a></li>
-        <li><a href="html/estilos.html">ir a estilos</a></li>
-        <li><a href="html/flecbox.html">ir a flexbox</a></li>
-    </ul>
-    
+    <div class="bacground"></div>
+    <div class="centering">
+        <form action="" class="my_form">
+            <div class="login_welcome">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Bruce_McCandless_II_during_EVA_in_1984.jpg/800px-Bruce_McCandless_II_during_EVA_in_1984.jpg" alt="astronauta" class="login">
+                <h1>iniciar secion</h1>
+            </div>
+            <div class="text_filed">
+                <lavel for="email">Email</lavel>
+                <input type="text" 
+                id="email" name="email" 
+                aria-label="Email" 
+                placeholder="ingrese su correo electronico" 
+                required>
+                <img src="" alt="">
+            </div>
+           <div class="text_filed">
+            <lavel>pasword</lavel>
+                <input type="text"
+                id="pasword" 
+                name="pasword"
+                placeholder="ingrese su contraseña"
+                required>
+                <img src="" alt="">
+           </div>
+                
+           <input type="submit" class="my_form_button" value="login">
+           <div class="my_form_action">
+            <div class="my_form">
+                <span>olvidaste tu contraseña</span>
+                <a href="#" title="recuperar tu contraseña">recuperar contraseña</a>
+            </div>
+            <div class="my_form_signup">
+                <a href="#" title="create acount">crear cuenta</a>
+            </div>
+           </div>
+        </form>
+    </div>
+
+        
 </body>
 </html>
